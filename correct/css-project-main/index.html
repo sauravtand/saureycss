@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Tandukar</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span>That</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="saurey.png" width="25px" height="25px" alt="Open Navigation">
+            <nav id="nav" class="nav-initial">
+                <img id="mobile-exit" class="mobile-menu-exit" src="download.jfif" width="15px" height="15px"
+                    alt="close navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href=".\education.html">Education</a></li>
+                    <li><a href=".\hobbies.html">Hobbies</a></li>
+                    <li><a href=".\experience.html">Experiences</a></li>
+                    <li><a href=".\expertise.html">Expertise</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="current"><a href=".\contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Saurav Tandukar </p>
+                <h1>Raise Your Ability Before You Judge Anyone</h1>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul>
+                <li><a href=".\unlimitedtasks.html">  Unlimited tasks</a> </li>
+                <li><a href=".\socialsites.html"> Social Medias</a> </li>
+            </ul>
+        </div>
+    </section>
+    <section class="testimonial-section">
+        <div class="container">
+            <ul>
+                <blockquote> Always Try Until You Overcome Your Limits! </blockquote>
+
+            </ul>
+        </div>
+    </section>
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+        const nav = document.getElementById('nav');
+        const mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.remove("nav-initial");
+            nav.classList.add("nav-after-click");
+
+        }
+        )
+
+        mobileBtnExit.addEventListener('click', () => {
+
+
+            nav.classList.add("nav-initial");
+            console.log("Hell");
+        }
+        )
+        console.log("This is end");
+
+        document.getElementById('click')
+    </script>
+
+</body>
+
+</html>
